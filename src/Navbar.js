@@ -6,24 +6,25 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="navbar">
-      <NavLink to="/home" className="logo" onClick={()=>setIsMobile(false)}>Demo</NavLink>
+      <NavLink to="/" activeClassName="active" className="logo" onClick={()=>setIsMobile(false)}>
+      <i className="fas fa-house-user">eState</i></NavLink>
       <ul
         className={isMobile ? "nav-links-mobile" : "nav-links"}
         onClick={() => setIsMobile(false)}
       >
-        <NavLink to="/home" className="home">
+        <NavLink activeClassName="active" to="/home" className="home">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/services" className="services">
+        <NavLink activeClassName="active" to="/services" className="services">
           <li>Services</li>
         </NavLink>
-        <NavLink to="/about" className="about">
+        <NavLink activeClassName="active" to="/about" className="about">
           <li>About</li>
         </NavLink>
-        <NavLink to="/contact" className="contact">
+        <NavLink activeClassName="active" to="/contact" className="contact">
           <li>Contact</li>
         </NavLink>
-        <NavLink to="/signup" className="signup">
+        <NavLink activeClassName="active" to="/signup" className="signup">
           <li>Signup</li>
         </NavLink>
       </ul>

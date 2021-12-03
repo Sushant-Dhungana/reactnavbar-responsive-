@@ -1,22 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height:75px;
-    background-color: #0082bc;
-    color: white;
+    height:70px;
+    background-color: #b9c6cc;
+    color: rgb(12, 11, 11);
+    border-bottom: none;
 }
 .logo {
     font-size: 30px;
+    font-weight: bold;
     text-decoration: none;
-    color:white;
+    color:rgb(12, 11, 11);
     cursor:pointer;
+    border-bottom: none;
     padding-left: 30px;
     padding-bottom: 17px;
 }
@@ -32,7 +39,14 @@
     width: 70%;
     padding-top: 5px;
     padding-right: 40px;
+    border-bottom: none;
 }
+
+.logo.active {
+    border-bottom: none;
+}
+
+
 
 
 .home,
@@ -41,32 +55,43 @@
 .contact,
 .signup {
     text-decoration: none;
-    color:white;
+    color:rgb(3, 3, 3);
     font-size: 20px;
-   
+    font-weight:bolder;
     padding: 8px 15px;
     margin: 0 10px;
     cursor:pointer;
 }
+.active {
+    font-weight: bold;
+    border-bottom: 2px solid #565387;
+}
 .home:hover{
-    color: rgb(231, 9, 9);
+    color: rgb(241, 8, 8);
 }
 .services:hover {
     color:rgb(250, 7, 7);
 }
 .about:hover {
     color:rgb(250, 7, 7);
+
 }
 .contact:hover {
     color:rgb(250, 7, 7);
+
 }
-.signup:hover {
-    color:rgb(30, 204, 82);
-}
+
 .signup{
     border: 0.6px solid yellow;
+  
     border-radius: 7px;
 }
+.signup:hover {
+    color:rgb(201, 243, 12);
+    border-radius: 60px;
+ 
+}
+
 
 .mobile-menu-icon {
     display:none;
@@ -98,11 +123,12 @@
     .about,
     .contact,
     .signup {
-        color: white;
+        color: rgb(8, 8, 8);
         text-align: center;
         padding: 32px;
         width: 100%;
         transition: all 0.5s ease;
+        border-bottom: none;
     }
     .signup {
         border:none;
@@ -112,7 +138,7 @@
         position: absolute;
         font-size: 30px;
         color: rgb(12, 7, 7);
-        background-color: #0082bc;
+        background-color: #bdc7cc;
         border: none;
         outline: none;
         top: 15px;
